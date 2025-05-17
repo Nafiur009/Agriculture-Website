@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - Nafiur Agro</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/contact.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+  <header id="header">
+    <div class="container">
+      <div class="logo">
+        <a href="index.html">
+          <span class="logo-text">Nafiur <span class="accent">Agro</span></span>
+        </a>
+      </div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+        <div class="mobile-menu">
+          <i class="fas fa-bars"></i>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <section class="page-banner">
+    <div class="banner-content">
+      <h1>Contact Us</h1>
+      <p>Get in touch with our team for inquiries and support</p>
+    </div>
+  </section>
+
+  <section class="contact-info">
+    <div class="container">
+      <div class="info-grid">
+        <div class="info-card">
+          <div class="info-icon">
+            <i class="fas fa-map-marker-alt"></i>
+          </div>
+          <h3>Our Location</h3>
+          <p>123 Agriculture Road<br>Gulshan, Dhaka 1212<br>Bangladesh</p>
+        </div>
+        <div class="info-card">
+          <div class="info-icon">
+            <i class="fas fa-phone"></i>
+          </div>
+          <h3>Phone Number</h3>
+          <p>+8801780399956</p>
+          <p>Office Hours: 9 AM - 5 PM (Sun-Thu)</p>
+        </div>
+        <div class="info-card">
+          <div class="info-icon">
+            <i class="fas fa-envelope"></i>
+          </div>
+          <h3>Email Address</h3>
+          <p>nafiur890@gmail.com</p>
+          <p>info@nafiuragro.com</p>
+        </div>
+        <div class="info-card">
+          <div class="info-icon">
+            <i class="fas fa-clock"></i>
+          </div>
+          <h3>Working Hours</h3>
+          <p>Sunday - Thursday: 9 AM - 5 PM</p>
+          <p>Friday & Saturday: Closed</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact-form-section">
+    <div class="container">
+      <div class="contact-container">
+        <div class="form-wrapper">
+          <h2 class="section-title">Send Us a Message</h2>
+          <form class="contact-form" id="contactForm">
+            <div class="form-group">
+              <label for="name">Your Name</label>
+              <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" name="phone">
+            </div>
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <select id="subject" name="subject">
+                <option value="general">General Inquiry</option>
+                <option value="products">Product Information</option>
+                <option value="partnership">Partnership Opportunities</option>
+                <option value="support">Technical Support</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+            <div class="form-group full-width">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="6" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary submit-btn">Send Message</button>
+          </form>
+        </div>
+        <div class="map-wrapper">
+          <h2 class="section-title">Find Us</h2>
+          <div class="map-container">
+            <!-- Google Maps Embed would go here in production -->
+            <img src="https://images.pexels.com/photos/2662116/pexels-photo-2662116.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Map Location" class="map-placeholder">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="faq">
+    <div class="container">
+      <h2 class="section-title">Frequently Asked Questions</h2>
+      <div class="accordion">
+        <div class="accordion-item">
+          <div class="accordion-header">
+            <h3>How can I purchase seeds from Nafiur Agro?</h3>
+            <span class="accordion-icon"><i class="fas fa-chevron-down"></i></span>
+          </div>
+          <div class="accordion-content">
+            <p>You can purchase our seeds by visiting our head office in Dhaka, through our authorized distributors across Bangladesh, or by placing an order through our contact form. For bulk orders, please contact our sales team directly.</p>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <div class="accordion-header">
+            <h3>Do you provide agricultural consultation services?</h3>
+            <span class="accordion-icon"><i class="fas fa-chevron-down"></i></span>
+          </div>
+          <div class="accordion-content">
+            <p>Yes, we provide comprehensive agricultural consultation services. Our team of experts can help with crop selection, soil testing, pest management, irrigation planning, and more. You can arrange for a consultation by contacting our office.</p>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <div class="accordion-header">
+            <h3>Are your products certified organic?</h3>
+            <span class="accordion-icon"><i class="fas fa-chevron-down"></i></span>
+          </div>
+          <div class="accordion-content">
+            <p>Many of our products are certified organic. We work with internationally recognized certification bodies to ensure our organic products meet global standards. Look for the organic certification label on our product packaging.</p>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <div class="accordion-header">
+            <h3>Do you offer training programs for farmers?</h3>
+            <span class="accordion-icon"><i class="fas fa-chevron-down"></i></span>
+          </div>
+          <div class="accordion-content">
+            <p>Yes, we regularly conduct training programs for farmers across Bangladesh. These programs cover modern farming techniques, organic practices, pest management, and more. Check our website for upcoming training schedules or contact us for custom training sessions.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="branches">
+    <div class="container">
+      <h2 class="section-title">Our Branches</h2>
+      <div class="branches-grid">
+        <div class="branch-card">
+          <h3>Dhaka (Headquarters)</h3>
+          <p><i class="fas fa-map-marker-alt"></i> 123 Agriculture Road, Gulshan, Dhaka</p>
+          <p><i class="fas fa-phone"></i> +8801780399956</p>
+        </div>
+        <div class="branch-card">
+          <h3>Chittagong</h3>
+          <p><i class="fas fa-map-marker-alt"></i> 45 Port Connect Road, Agrabad, Chittagong</p>
+          <p><i class="fas fa-phone"></i> +8801780399957</p>
+        </div>
+        <div class="branch-card">
+          <h3>Rajshahi</h3>
+          <p><i class="fas fa-map-marker-alt"></i> 78 Farming Center, Shaheb Bazar, Rajshahi</p>
+          <p><i class="fas fa-phone"></i> +8801780399958</p>
+        </div>
+        <div class="branch-card">
+          <h3>Khulna</h3>
+          <p><i class="fas fa-map-marker-alt"></i> 92 Delta Street, Sonadanga, Khulna</p>
+          <p><i class="fas fa-phone"></i> +8801780399959</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta">
+    <div class="container">
+      <h2>Connect with Our Agricultural Experts</h2>
+      <p>Our team is ready to help you improve your farming practices</p>
+      <a href="tel:+8801780399956" class="btn btn-primary">Call Us Now</a>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-about">
+          <h3>Nafiur Agro</h3>
+          <p>Empowering Bangladeshi farmers with sustainable agricultural solutions since 2015.</p>
+        </div>
+        <div class="footer-links">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h3>Contact Us</h3>
+          <ul>
+            <li><i class="fas fa-map-marker-alt"></i> Dhaka, Bangladesh</li>
+            <li><i class="fas fa-phone"></i> +8801780399956</li>
+            <li><i class="fas fa-envelope"></i> nafiur890@gmail.com</li>
+          </ul>
+        </div>
+        <div class="footer-social">
+          <h3>Follow Us</h3>
+          <div class="social-icons">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Nafiur. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

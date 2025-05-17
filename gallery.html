@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery - Nafiur Agro</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/gallery.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+  <header id="header">
+    <div class="container">
+      <div class="logo">
+        <a href="index.html">
+          <span class="logo-text">Nafiur <span class="accent">Agro</span></span>
+        </a>
+      </div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="gallery.html" class="active">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="mobile-menu">
+          <i class="fas fa-bars"></i>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <section class="page-banner">
+    <div class="banner-content">
+      <h1>Our Gallery</h1>
+      <p>Explore the beauty of Bangladeshi agriculture through our lens</p>
+    </div>
+  </section>
+
+  <section class="gallery-filter">
+    <div class="container">
+      <div class="filter-buttons">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="farming">Farming</button>
+        <button class="filter-btn" data-filter="products">Products</button>
+        <button class="filter-btn" data-filter="events">Events</button>
+        <button class="filter-btn" data-filter="technology">Technology</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="gallery">
+    <div class="container">
+      <div class="gallery-grid">
+        <div class="gallery-item" data-category="farming">
+          <div class="gallery-image">
+            <img src="https://images.pexels.com/photos/2252584/pexels-photo-2252584.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Rice Field">
+            <div class="gallery-overlay">
+              <div class="overlay-content">
+                <h3>Rice Cultivation</h3>
+                <p>Traditional rice farming in Bangladesh's fertile fields</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="gallery-item" data-category="farming">
+          <div class="gallery-image">
+            <img src="https://images.pexels.com/photos/928251/pexels-photo-928251.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Vegetable Farm">
+            <div class="gallery-overlay">
+              <div class="overlay-content">
+                <h3>Vegetable Farming</h3>
+                <p>Organic vegetable production using sustainable methods</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="gallery-item" data-category="products">
+          <div class="gallery-image">
+            <img src="https://images.pexels.com/photos/2286776/pexels-photo-2286776.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Seed Varieties">
+            <div class="gallery-overlay">
+              <div class="overlay-content">
+                <h3>Seed Collection</h3>
+                <p>High-quality seeds for various crops suitable for Bangladesh</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="gallery-item" data-category="events">
+          <div class="gallery-image">
+            <img src="https://images.pexels.com/photos/7658355/pexels-photo-7658355.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Farmer Training">
+            <div class="gallery-overlay">
+              <div class="overlay-content">
+                <h3>Farmer Training Program</h3>
+                <p>Educational workshops for local farmers on modern techniques</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="gallery-item" data-category="technology">
+          <div class="gallery-image">
+            <img src="https://images.pexels.com/photos/9436715/pexels-photo-9436715.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Modern Irrigation">
+            <div class="gallery-overlay">
+              <div class="overlay-content">
+                <h3>Irrigation Systems</h3>
+                <p>Water-efficient irrigation technology for sustainable farming</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="gallery-item" data-category="farming">
+          <div class="gallery-image">
+            <img src="https://images.pexels.com/photos/2165688/pexels-photo-2165688.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Harvesting">
+            <div class="gallery-overlay">
+              <div class="overlay-content">
+                <h3>Rice Harvesting</h3>
+                <p>Traditional harvesting methods still used in Bangladesh</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="gallery-item" data-category="products">
+          <div class="gallery-image">
+            <img src="https://images.pexels.com/photos/8090968/pexels-photo-8090968.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Fertilizers">
+            <div class="gallery-overlay">
+              <div class="overlay-content">
+                <h3>Organic Fertilizers</h3>
+                <p>Eco-friendly fertilizers for chemical-free farming</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="gallery-item" data-category="events">
+          <div class="gallery-image">
+            <img src="https://images.pexels.com/photos/7659926/pexels-photo-7659926.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Agriculture Fair">
+            <div class="gallery-overlay">
+              <div class="overlay-content">
+                <h3>Agricultural Exhibition</h3>
+                <p>Nafiur Agro's booth at the National Agriculture Fair</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="gallery-item" data-category="technology">
+          <div class="gallery-image">
+            <img src="https://images.pexels.com/photos/5225805/pexels-photo-5225805.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Modern Farming">
+            <div class="gallery-overlay">
+              <div class="overlay-content">
+                <h3>Advanced Machinery</h3>
+                <p>Modern agricultural equipment for efficient farming</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="gallery-item" data-category="farming">
+          <div class="gallery-image">
+            <img src="https://images.pexels.com/photos/6718736/pexels-photo-6718736.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Tea Plantation">
+            <div class="gallery-overlay">
+              <div class="overlay-content">
+                <h3>Tea Plantation</h3>
+                <p>Tea cultivation in the hilly regions of Bangladesh</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="gallery-item" data-category="products">
+          <div class="gallery-image">
+            <img src="https://images.pexels.com/photos/4207910/pexels-photo-4207910.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Rice Varieties">
+            <div class="gallery-overlay">
+              <div class="overlay-content">
+                <h3>Rice Varieties</h3>
+                <p>Different varieties of rice developed for local conditions</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="gallery-item" data-category="events">
+          <div class="gallery-image">
+            <img src="https://images.pexels.com/photos/2381069/pexels-photo-2381069.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Field Visit">
+            <div class="gallery-overlay">
+              <div class="overlay-content">
+                <h3>Field Demonstration</h3>
+                <p>Showing farmers the benefits of our agricultural practices</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="video-gallery">
+    <div class="container">
+      <h2 class="section-title">Video Tours</h2>
+      <div class="video-grid">
+        <div class="video-item">
+          <div class="video-thumbnail">
+            <img src="https://images.pexels.com/photos/7247/wheat-field-wheat-cereal-7247.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Farm Tour Video">
+            <div class="play-button">
+              <i class="fas fa-play"></i>
+            </div>
+          </div>
+          <div class="video-info">
+            <h3>Tour of Our Research Farm</h3>
+            <p>Explore our state-of-the-art research facilities and experimental fields</p>
+          </div>
+        </div>
+        <div class="video-item">
+          <div class="video-thumbnail">
+            <img src="https://images.pexels.com/photos/2382904/pexels-photo-2382904.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Harvesting Video">
+            <div class="play-button">
+              <i class="fas fa-play"></i>
+            </div>
+          </div>
+          <div class="video-info">
+            <h3>Rice Harvesting Season</h3>
+            <p>Witness the joy of harvest time with farmers using our premium seeds</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta">
+    <div class="container">
+      <h2>Share Your Agricultural Success</h2>
+      <p>We'd love to feature your story in our gallery</p>
+      <a href="contact.html" class="btn btn-primary">Submit Your Photos</a>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-about">
+          <h3>Nafiur Agro</h3>
+          <p>Empowering Bangladeshi farmers with sustainable agricultural solutions since 2015.</p>
+        </div>
+        <div class="footer-links">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h3>Contact Us</h3>
+          <ul>
+            <li><i class="fas fa-map-marker-alt"></i> Dhaka, Bangladesh</li>
+            <li><i class="fas fa-phone"></i> +8801780399956</li>
+            <li><i class="fas fa-envelope"></i> nafiur890@gmail.com</li>
+          </ul>
+        </div>
+        <div class="footer-social">
+          <h3>Follow Us</h3>
+          <div class="social-icons">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Nafiur. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

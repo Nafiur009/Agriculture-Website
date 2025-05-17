@@ -1,0 +1,330 @@
+/* About Page Styles */
+
+/* Page Banner */
+.page-banner {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.pexels.com/photos/5560777/pexels-photo-5560777.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+  background-size: cover;
+  background-position: center;
+}
+
+/* Our Story Section */
+.our-story {
+  padding-top: var(--space-xxl);
+  padding-bottom: var(--space-xxl);
+}
+
+.story-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-xxl);
+  align-items: center;
+}
+
+.story-text {
+  order: 2;
+}
+
+.story-text .section-title {
+  text-align: left;
+  padding-bottom: var(--space-md);
+}
+
+.story-text .section-title::after {
+  left: 0;
+  transform: none;
+}
+
+.story-image {
+  order: 1;
+  border-radius: var(--border-radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
+  position: relative;
+}
+
+.story-image::before {
+  content: '';
+  position: absolute;
+  top: 20px;
+  left: -20px;
+  width: 100%;
+  height: 100%;
+  background-color: var(--primary-light);
+  opacity: 0.2;
+  border-radius: var(--border-radius-lg);
+  z-index: -1;
+}
+
+.story-image img {
+  transition: var(--transition-normal);
+}
+
+.story-image:hover img {
+  transform: scale(1.05);
+}
+
+/* Mission Vision Section */
+.mission-vision {
+  background-color: var(--background-alt);
+  padding-top: var(--space-xxl);
+  padding-bottom: var(--space-xxl);
+}
+
+.mission-vision-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-xl);
+}
+
+.mission-card,
+.vision-card,
+.values-card {
+  background-color: var(--background-light);
+  padding: var(--space-xl);
+  border-radius: var(--border-radius-md);
+  box-shadow: var(--shadow-sm);
+  text-align: center;
+  transition: var(--transition-normal);
+  position: relative;
+  overflow: hidden;
+}
+
+.mission-card:hover,
+.vision-card:hover,
+.values-card:hover {
+  transform: translateY(-10px);
+  box-shadow: var(--shadow-lg);
+}
+
+.mission-card::before,
+.vision-card::before,
+.values-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 5px;
+}
+
+.mission-card::before {
+  background-color: var(--primary-color);
+}
+
+.vision-card::before {
+  background-color: var(--accent-color);
+}
+
+.values-card::before {
+  background-color: var(--secondary-color);
+}
+
+.card-icon {
+  font-size: 2.5rem;
+  margin-bottom: var(--space-md);
+}
+
+.mission-card .card-icon {
+  color: var(--primary-color);
+}
+
+.vision-card .card-icon {
+  color: var(--accent-color);
+}
+
+.values-card .card-icon {
+  color: var(--secondary-color);
+}
+
+/* Team Section */
+.team {
+  padding-top: var(--space-xxl);
+  padding-bottom: var(--space-xxl);
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--space-xl);
+}
+
+.team-member {
+  background-color: var(--background-light);
+  border-radius: var(--border-radius-md);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  transition: var(--transition-normal);
+}
+
+.team-member:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-md);
+}
+
+.member-image {
+  height: 250px;
+  overflow: hidden;
+}
+
+.member-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: var(--transition-normal);
+}
+
+.team-member:hover .member-image img {
+  transform: scale(1.1);
+}
+
+.member-info {
+  padding: var(--space-lg);
+  text-align: center;
+}
+
+.member-info h3 {
+  margin-bottom: var(--space-xs);
+}
+
+.member-title {
+  color: var(--primary-color);
+  font-weight: 600;
+  margin-bottom: var(--space-sm);
+}
+
+.member-bio {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  margin-bottom: 0;
+}
+
+/* Achievements Section */
+.achievements {
+  background-color: var(--primary-color);
+  color: var(--text-light);
+  padding-top: var(--space-xxl);
+  padding-bottom: var(--space-xxl);
+}
+
+.achievements .section-title {
+  color: var(--text-light);
+}
+
+.achievements .section-title::after {
+  background-color: var(--accent-color);
+}
+
+.achievement-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--space-xl);
+}
+
+.achievement-card {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: var(--space-xl);
+  border-radius: var(--border-radius-md);
+  text-align: center;
+  transition: var(--transition-normal);
+}
+
+.achievement-card:hover {
+  transform: translateY(-5px);
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.achievement-number {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: var(--space-sm);
+  color: var(--accent-color);
+}
+
+.achievement-text {
+  font-size: 1.1rem;
+}
+
+/* Partners Section */
+.partners {
+  padding-top: var(--space-xxl);
+  padding-bottom: var(--space-xxl);
+}
+
+.partners-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--space-xl);
+  align-items: center;
+}
+
+.partner-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+  filter: grayscale(100%);
+  opacity: 0.7;
+  transition: var(--transition-normal);
+}
+
+.partner-logo:hover {
+  filter: grayscale(0);
+  opacity: 1;
+}
+
+.partner-logo img {
+  max-height: 80px;
+  max-width: 80%;
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+  .mission-vision-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .team-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .achievement-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-lg);
+  }
+  
+  .partners-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .story-content {
+    grid-template-columns: 1fr;
+  }
+  
+  .story-text {
+    order: 2;
+  }
+  
+  .story-image {
+    order: 1;
+  }
+}
+
+@media (max-width: 576px) {
+  .mission-vision-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .team-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .achievement-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .partners-grid {
+    grid-template-columns: 1fr;
+  }
+}
